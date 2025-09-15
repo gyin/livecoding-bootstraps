@@ -1,106 +1,88 @@
-Can be used for live coding exercises during job interviews, or for a quick bootstrap during a coding dojo.
-It was created by running `composer init`, adding PHPUnit as a dev dependency, and creating a small lightweight test case.
+PHP (Composer) Console Bootstrap
 
-# Prerequisites
-
-## With GitHub Codespaces
-
-One easy way to run  is meant to be run inside of GitHub Codespace for job interview. See the home README for instructions on 
-Can also be used for coding dojos.
-
-## On local PC
-
-This can be run simply by installing 
-
-# Execute
-
-Run, on MacOS and Linux:
-
-```
-cd php-composer
-php src/app.php
-```
-
-And in Windows
-
-```
-cd php-composer
-php src\app.php
-```
-
-
-# Run Unit Tests
-
-Run, on MacOS and Linux:
-
-```
-cd php-composer
-vendor/bin/phpunit --testdox tests
-```
-
-And in Windows:
-
-```
-cd php-composer
-vendor\bin\phpunit --testdox tests
-```
-## PHP Composer Bootstrap
-
-This is a minimal PHP console application project created with Composer. Use it for live coding exercises, technical interviews, or as a quick bootstrap for coding dojos.
+This is a minimal PHP console application created with Composer. Use it for live coding exercises, technical interviews, or as a quick bootstrap for coding dojos.
 
 It demonstrates best practices for a modern PHP CLI app: Composer-based dependency management, PSR-4 autoloading, and PHPUnit for testing.
 
+## Project origin
 Created by running `composer init`, adding PHPUnit as a dev dependency, and creating a lightweight test case.
 
 ## Prerequisites
 
+- PHP (https://www.php.net/downloads.php)
+- Composer (https://getcomposer.org/download/)
+
 ### GitHub Codespaces
 Recommended for interviews and dojos. See the [main README](../README.md) for Codespaces setup instructions.
 
-### Local PC
-To run locally, install [PHP](https://www.php.net/downloads.php) and [Composer](https://getcomposer.org/download/).
+### First-time setup (local)
+After cloning, in the `php-composer` folder run:
 
-**First time setup:**
-After cloning, run the following command to install dependencies:
 ```sh
 composer install
 ```
 
-This will create the `vendor/` directory, which should not be committed to git. Make sure `vendor/` is listed in `.gitignore`.
+This will create the `vendor/` directory. Do not commit `vendor/`; ensure it's listed in `.gitignore`.
 
 ## Project Structure
 - `src/app.php`: Main application file
 - `tests/UnitTest.php`: Example PHPUnit test
-- `vendor/`: Composer dependencies
+- `vendor/`: Composer dependencies (generated)
 
-## Execute
+## Run the app
+On macOS / Linux:
 
-On MacOS and Linux:
 ```sh
 cd php-composer
 php src/app.php
 ```
 
-On Windows:
+On Windows (PowerShell):
+
 ```pwsh
 cd php-composer
-php src\app.php
+php src/app.php
 ```
 
-## Run Unit Tests
+## Run tests
+Preferred (cross-platform, uses Composer scripts):
 
-On MacOS and Linux:
+```sh
+cd php-composer
+composer test
+```
+
+Optional: run PHPUnit directly from the vendor folder (useful for debugging):
+
+On macOS / Linux:
+
 ```sh
 cd php-composer
 vendor/bin/phpunit --testdox tests
 ```
 
-On Windows:
+On Windows (PowerShell):
+
 ```pwsh
 cd php-composer
 vendor\bin\phpunit --testdox tests
 ```
 
 ## Troubleshooting
-- Make sure PHP and Composer are installed and available in your PATH.
+- Ensure PHP and Composer are installed and on your PATH.
 - If dependencies are missing, run `composer install` in the `php-composer` folder.
+
+## Maintenance
+For contributors and maintainers only: to update dependencies to newer versions run:
+
+```sh
+composer update
+```
+
+This updates `composer.lock` and installed packages. If you run `composer update`, review and commit the updated `composer.lock` so other users get the same dependency versions when they run `composer install`.
+
+Regular users and interview participants should not run `composer update` — they should use `composer install` to reproduce the versions in `composer.lock`.
+
+## Notes
+- This is intentionally minimal to keep the barrier to entry low during interviews and dojos.
+- If you want a web app example, consider adding a separate folder (e.g., `php-laravel`).

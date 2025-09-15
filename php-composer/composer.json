@@ -2,13 +2,16 @@
     "name": "gyin/app",
     "type": "project",
     "require-dev": {
-        "phpunit/phpunit": "^11.5"
+        "phpunit/phpunit": "^9.3"
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
             "Gyin\\App\\": "src/"
         }
+    },
+    "scripts": {
+        "test": "phpunit --testdox tests"
     },
     "authors": [
         {
