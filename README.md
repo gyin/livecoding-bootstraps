@@ -1,21 +1,6 @@
+- # Livecoding Bootstraps — Minimal language starter projects for live coding & interviews
 
-It is meant to be usable in live coding sessions, during technical interviews, with an environment like GitHub Codespaces, or Azure Dev Box.
-
-# Use in GitHub Codespace
-
-This is the simplest to use, and doesn't require any installation. GitHub proposes 120 core-hours per month to GitHub Free account holders.
-
-1. Fork that repository into your own repository
-2. Create a new codespace: https://github.com/codespaces/new
-3. Open the folder of your choice, and use the instructions in the language specific README.md to run or test the program.
-
-# Use locally
-
-This can be used locally, during a coding dojo session, to allow participants to experiment with multiple programming languages with low barriers.
-(Although they need to have the compiler installed on their PC. The instructions are given in the language specific folder.)
-# Livecoding Bootstraps
-
-This repository provides minimal bootstrap programs in multiple programming languages, designed for live coding sessions, technical interviews, and coding dojos.
+This repository provides minimal starter projects (small console apps + tests) in multiple programming languages. It's intended for live coding sessions, interviews, and coding dojos, and is optimized for easy use in environments such as GitHub Codespaces or locally on participants' machines.
 
 ## Table of Contents
 - [Overview](#overview)
