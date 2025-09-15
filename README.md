@@ -24,6 +24,7 @@ You can use this repository locally for coding dojos or practice. You’ll need 
 
 ## Available Languages
 - PHP ([php-composer/README.md](php-composer/README.md))
+- CSharp (with XUnit) ([csharp-xunit/README.md](csharp-xunit/README.md))
 <!-- Add more languages here as you add them -->
 
 ## Contributing
