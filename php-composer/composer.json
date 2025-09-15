@@ -11,6 +11,7 @@
         }
     },
     "scripts": {
+        "start": "php src/app.php",
         "test": "phpunit --testdox tests"
     },
     "authors": [

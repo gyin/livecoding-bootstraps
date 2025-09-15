@@ -30,6 +30,15 @@ This will create the `vendor/` directory. Do not commit `vendor/`; ensure it's l
 - `vendor/`: Composer dependencies (generated)
 
 ## Run the app
+Preferred (cross-platform, uses Composer scripts):
+
+```sh
+cd php-composer
+composer start
+```
+
+Optional: run the PHP script directly:
+
 On macOS / Linux:
 
 ```sh
