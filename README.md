@@ -1,4 +1,4 @@
-- # Livecoding Bootstraps — Minimal language starter projects for live coding & interviews
+# Livecoding Bootstraps — Minimal language starter projects for live coding & interviews
 
 This repository provides minimal starter projects (small console apps + tests) in multiple programming languages. It's intended for live coding sessions, interviews, and coding dojos, and is optimized for easy use in environments such as GitHub Codespaces or locally on participants' machines.
 
