@@ -1,0 +1,59 @@
+# .gitignore for livecoding-bootstraps
+
+# Global ignores
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Node
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+.idea/
+target/
+
+# Maven
+.mvn/
+
+# C# / .NET
+bin/
+obj/
+*.user
+*.suo
+*.vs/
+
+# PHP / Composer
+vendor/
+composer.lock
+
+# VS Code
+.vscode/
+
+# Mac/Linux
+*.swp
+*~
+
+# Test/coverage
+coverage/
+*.coverage
+
+# Others
+.env.local
+.env.*.local
+
+# Ignore Codespaces settings
+.devcontainer/
